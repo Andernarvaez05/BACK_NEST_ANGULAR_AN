@@ -1,0 +1,18 @@
+###Listar productos
+
+GET http://localhost:3000/producto
+
+###Crear producto
+POST http://localhost:3000/producto
+Content-Type: application/json
+
+{
+    "nombre":"Audifonos",
+    "precio":"20",
+    "stock":13,
+    "categoriaId":1
+}
+
+###Buscar productos por nombre
+
+GET http://localhost:3000/producto/back?page=1&q=mm&sort=asc
